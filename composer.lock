@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "440e9de0029a7187fd0aaf7f6ce5c2f1",
-    "content-hash": "39b59fb8ea9a07bc4cc9e794036c3052",
+    "hash": "ae65f0c032da335837f02a69183ed4a3",
+    "content-hash": "77e3033d45f798337591d7006aba791c",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -395,16 +395,16 @@
         },
         {
             "name": "izyue/yii2-admin",
-            "version": "dev-release",
+            "version": "0.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liulipeng/Yii2-Admin.git",
-                "reference": "f1b520e7096fd210d9756c24be45294350dc290f"
+                "reference": "a8259dc28fe7590baa4021d8e073e8d39dafe8d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liulipeng/Yii2-Admin/zipball/f1b520e7096fd210d9756c24be45294350dc290f",
-                "reference": "f1b520e7096fd210d9756c24be45294350dc290f",
+                "url": "https://api.github.com/repos/liulipeng/Yii2-Admin/zipball/a8259dc28fe7590baa4021d8e073e8d39dafe8d0",
+                "reference": "a8259dc28fe7590baa4021d8e073e8d39dafe8d0",
                 "shasum": ""
             },
             "require": {
@@ -430,7 +430,7 @@
                 }
             ],
             "description": "Yii2-Admin",
-            "time": "2016-06-08 01:28:24"
+            "time": "2016-06-08 03:07:58"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1128,9 +1128,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "izyue/yii2-admin": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

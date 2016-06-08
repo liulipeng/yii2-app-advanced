@@ -16,9 +16,9 @@
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": ">=2.0.6",
-        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-bootstrap": "*",9
         "yiisoft/yii2-swiftmailer": "*",
-        "izyue/yii2-admin": "dev-release",
+        "izyue/yii2-admin": "*",
         "yiidoc/yii2-redactor": "*",
         "yiisoft/yii2-imagine": "^2.0",
         "callmez/yii2-wechat-sdk": "^0.3.0"
