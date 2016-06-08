@@ -1,5 +1,52 @@
-Yii 2 Advanced Project Template
+Yii2 高级模板，配置的后台样式
 ===============================
+
+###安装
+
+#### 1. 下载本Yii2模板
+---
+
+```
+git clone https://github.com/liulipeng/Yii2-Project-Admin.git
+```
+
+#### 2. 安装Composer
+---
+
+```
+composer install
+```
+
+#### 3. 导入表结构(migration)
+---
+
+需要顺序执行
+
+- 导入rbac migration
+
+```
+yii migrate --migrationPath=@yii/rbac/migrations
+```
+- 导入admin migration
+
+```
+yii migrate --migrationPath=@izyue/admin/migrations
+```
+
+### 后台登录密码
+---
+
+```
+User: admin
+Password: @newsnow.com.cn@
+```
+
+### Admin源码
+
+源码点[这里](https://github.com/liulipeng/Yii2-Admin)
+
+---
+
 
 Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
 developing complex Web applications with multiple tiers.
