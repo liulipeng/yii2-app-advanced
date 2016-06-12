@@ -27,6 +27,33 @@ $controllerName = implode('/', $routeArray);
 
 $this->registerCssFile('/statics/css/slidebars.css', ['depends'=>'backend\assets\AppAsset']);
 
+function isSubUrl($menuArray, $route)
+{
+
+    if (isset($menuArray) && is_array($menuArray)) {
+
+        if (isset($menuArray['items'])) {
+            foreach ($menuArray['items'] as $item)
+            {
+                if (isSubUrl($item, $route)) {
+                    return true;
+                }
+            }
+        } else {
+            $url = is_array($menuArray['url']) ? $menuArray['url'][0] : $menuArray['url'];
+            if (strpos($url, $route)) {
+                return true;
+            }
+        }
+    } else {
+        $url = is_array($menuArray['url']) ? $menuArray['url'][0] : $menuArray['url'];
+        if (strpos($url, $route)) {
+            return true;
+        }
+    }
+    return false;
+
+}
 
 function isSubMenu($menuArray, $controllerName)
 {
@@ -42,13 +69,13 @@ function isSubMenu($menuArray, $controllerName)
             }
         } else {
             $url = is_array($menuArray['url']) ? $menuArray['url'][0] : $menuArray['url'];
-            if(strpos($url, $controllerName)){
+            if (strpos($url, $controllerName.'/')) {
                 return true;
             }
         }
     } else {
         $url = is_array($menuArray['url']) ? $menuArray['url'][0] : $menuArray['url'];
-        if(strpos($url, $controllerName)){
+        if (strpos($url, $controllerName.'/')) {
             return true;
         }
     }
@@ -58,14 +85,19 @@ function isSubMenu($menuArray, $controllerName)
 
 
 
-function initMenu($menuArray, $controllerName, $isShowIcon=false)
+function initMenu($menuArray, $controllerName, $isSubUrl, $isShowIcon=false)
 {
     if (isset($menuArray) && is_array($menuArray)) {
 
         $url = is_array($menuArray['url']) ? $menuArray['url'][0] : $menuArray['url'];
 
-        $isSubMent = isSubMenu($menuArray, $controllerName);
-        if ($isSubMent) {
+        if (empty($isSubUrl)) {
+            $isSubMenu = isSubMenu($menuArray, $controllerName);
+        } else {
+            $route = Yii::$app->controller->getRoute();
+            $isSubMenu = isSubUrl($menuArray, $route);
+        }
+        if ($isSubMenu) {
             $class = ' active ';
         } else {
             $class = '';
@@ -83,7 +115,7 @@ function initMenu($menuArray, $controllerName, $isShowIcon=false)
             echo '<ul class="sub">';
             foreach ($menuArray['items'] as $item)
             {
-                echo initMenu($item, $controllerName);
+                echo initMenu($item, $controllerName, $isSubUrl);
             }
             echo '</ul>';
         }
@@ -364,14 +396,24 @@ function initMenu($menuArray, $controllerName, $isShowIcon=false)
                         <span><?=Yii::t('admin', 'dashboard')?></span>
                     </a>
                 </li>
-
                 <?php
                     if(isset($menuRows)){
 
+                        $isSubUrl = false;
                         foreach($menuRows as $menuRow){
-                            initMenu($menuRow, $controllerName, true);
+
+                            $isSubUrl = isSubUrl($menuRow, $route);
+
+                            if ($isSubUrl) {
+                                break;
+                            }
+
+
                         }
-//                        die;
+                        foreach($menuRows as $menuRow){
+
+                            initMenu($menuRow, $controllerName, $isSubUrl, true);
+                        }
                     }
                 ?>
 
