@@ -11,6 +11,9 @@ use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
 
 AppAsset::register($this);
+
+$this->registerCssFile('/statics/css/soon.css');
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -22,17 +25,19 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="login-body">
+<body class="cs-bg">
 <?php $this->beginBody() ?>
 
 
-<div class="container">
 
+<div class="lock-wrapper">
+    <a class="logo floatless" href="/">IZ<span>YUE</span>管理系统</a>
     <?=$content?>
-
 </div>
+
 
 <?php $this->endBody() ?>
 </body>
 </html>
 <?php $this->endPage() ?>
+

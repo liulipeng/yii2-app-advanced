@@ -22,16 +22,22 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= $form->field($model, 'username',[
         'inputOptions' => ['class'=>'form-control', 'placeholder' => Yii::t('common', 'username')],
-        'inputTemplate' => '{input}',
+        'inputTemplate' => '<div class="input-group m-bot15">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                {input}
+                            </div>',
     ])->label(false) ?>
     <?= $form->field($model, 'password',[
         'inputOptions' => ['class'=>'form-control', 'placeholder' => Yii::t('common', 'password')],
+        'inputTemplate' => '<div class="input-group m-bot15">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                {input}
+                            </div>',
     ])->passwordInput()->label(false) ?>
 
     <?= $form->field($model, 'rememberMe',[
         'inputTemplate'=>'{input}',
         'options' => [
-            'style' => 'margin-left:-20px;'
         ],
     ])->checkbox() ?>
 
@@ -39,3 +45,4 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= Html::submitButton(Yii::t('common', 'login'), ['class' => 'btn btn-lg btn-login btn-block', 'name' => 'login-button']) ?>
 </div>
 <?php ActiveForm::end(); ?>
+

@@ -146,7 +146,7 @@ function initMenu($menuArray, $controllerName, $isSubUrl, $isShowIcon=false)
             <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
         </div>
         <!--logo start-->
-        <a href="<?=Url::home()?>" class="logo">NEWS<span>NOW</span></a>
+        <a href="<?=Url::home()?>" class="logo">IZ<span>YUE</span></a>
         <!--logo end-->
         <div class="nav notify-row" id="top_menu">
             <!--  notification start -->
