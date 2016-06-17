@@ -14,10 +14,11 @@ $this->params['breadcrumbs'][] = $this->title;
 <?php $form = ActiveForm::begin([
     'id' => 'login-form',
     'options'=>[
-        'class'=>'form-signin'
+        'class'=>'form-signin lock-box text-center'
     ]
 ]); ?>
-<h2 class="form-signin-heading"><?= Html::encode($this->title) ?></h2>
+
+<a class="logo floatless" href="/">IZ<span>YUE</span>管理系统</a>
 <div class="login-wrap">
 
     <?= $form->field($model, 'username',[
@@ -40,7 +41,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'options' => [
         ],
     ])->checkbox() ?>
-
 
     <?= Html::submitButton(Yii::t('common', 'login'), ['class' => 'btn btn-lg btn-login btn-block', 'name' => 'login-button']) ?>
 </div>

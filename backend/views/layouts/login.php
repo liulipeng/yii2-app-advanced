@@ -31,7 +31,6 @@ $this->registerCssFile('/statics/css/soon.css');
 
 
 <div class="lock-wrapper">
-    <a class="logo floatless" href="/">IZ<span>YUE</span>管理系统</a>
     <?=$content?>
 </div>
 

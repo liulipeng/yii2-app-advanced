@@ -76,6 +76,7 @@ a, a:hover, a:focus {
 
 .form-signin .checkbox {
     float: left;
+    margin: 0;
 }
 .form-signin .checkbox {
     font-weight: normal;
@@ -3116,6 +3117,11 @@ ul.amounts li {
 
 .form-horizontal.tasi-form .form-group .help-block {
     margin-bottom: 0;
+}
+
+.login-wrap .help-block {
+    text-align: left;
+    line-height: 14px;
 }
 
 
