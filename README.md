@@ -1,6 +1,24 @@
 Yii2 高级模板，配置的后台样式
 ===============================
 
+### 简介
+
+系统基于yii2.0框架开发，保留框架原有的特性，适合作为二次开发的基础系统，也可以直接拿来作为后台系统。管理系统的模块在不断完善中，现有的功能包含，完整的RBAC权限管理~
+
+### 功能
+
+1. 基础功能：登录，登出，密码修改等常见的功能
+
+2. 菜单配置：可视化配置菜单，可以根据配置用户的权限显示隐藏菜单
+
+3. 权限机制：角色、权限增删改查，以及给用户赋予角色权限
+
+4. 规则机制：除了权限角色之外有规则机制，即可以给对应的权限配置规则
+
+5. 二次开发：完全可以基于该系统做二次开发，开发一套适合自己的后台管理系统，节约权限控制以及部分基础功能开发的时间成本，后台系统开发的不二之选
+
+6. 持续更新：新的功能模块会持续更新，请关注
+
 ###安装
 
 #### 1. 下载本Yii2模板
@@ -45,23 +63,32 @@ Password: @newsnow.com.cn@
 
 源码点[这里](https://github.com/liulipeng/Yii2-Admin)
 
----
 
+### 预览
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+#### 登录
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+![](http://www.izyue.com/yii2-admin/index/1.jpg)
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+#### 首页
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+![](http://www.izyue.com/yii2-admin/index/2.jpg)
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-advanced/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-advanced/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
+#### 权限管理
+
+![](http://www.izyue.com/yii2-admin/index/3.jpg)
+
+#### 角色管理
+
+![](http://www.izyue.com/yii2-admin/index/4.jpg)
+
+#### 路由管理
+
+![](http://www.izyue.com/yii2-admin/index/5.jpg)
+
+#### 菜单管理
+
+![](http://www.izyue.com/yii2-admin/index/6.jpg)
 
 DIRECTORY STRUCTURE
 -------------------
