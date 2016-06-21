@@ -1,27 +1,22 @@
 {
-    "name": "yiisoft/yii2-app-advanced",
+    "name": "izyue/yii2-app-advanced",
     "description": "Yii 2 Advanced Project Template",
     "keywords": ["yii2", "framework", "advanced", "project template"],
     "homepage": "http://www.yiiframework.com/",
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2"
+        "source": "https://github.com/liulipeng/Yii2-Project-Admin"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": ">=2.0.6",
         "yiisoft/yii2-bootstrap": "*",
-        "yiisoft/yii2-swiftmailer": "*",
-        "izyue/yii2-admin": "*",
+        "yiisoft/yii2-swiftmailer": "*"
+        "izyue/yii2-admin": "*"
         "yiidoc/yii2-redactor": "*",
         "yiisoft/yii2-imagine": "^2.0",
-        "callmez/yii2-wechat-sdk": "^0.3.0"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
@@ -37,6 +32,14 @@
             "npm-asset-library": "vendor/npm",
             "bower-asset-library": "vendor/bower"
         }
+    },
+    "scripts": {
+        "post-install-cmd": "php init --env=Development --overwrite=n"
     }
+    "authors": [
+        {
+            "name": "刘李鹏",
+            "email": "liu.lipeng@icloud.com"
+        }
+    ],
 }
-
