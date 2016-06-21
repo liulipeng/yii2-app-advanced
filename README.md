@@ -21,11 +21,12 @@ Yii2 高级模板，配置的后台样式
 
 ###安装
 
-#### 1. 下载本Yii2模板
+#### 1. 安装/izyue/Yii2模板
 ---
 
 ```
-git clone https://github.com/liulipeng/Yii2-Project-Admin.git
+php composer.phar global require "fxp/composer-asset-plugin:~1.1.1"
+php composer.phar create-project --prefer-dist izyue/yii2-app-advanced advanced
 ```
 
 #### 2. 安装Composer
