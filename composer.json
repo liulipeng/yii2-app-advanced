@@ -35,11 +35,11 @@
     },
     "scripts": {
         "post-install-cmd": "php init --env=Development --overwrite=n"
-    }
+    },
     "authors": [
         {
             "name": "刘李鹏",
             "email": "liu.lipeng@icloud.com"
         }
-    ],
+    ]
 }
