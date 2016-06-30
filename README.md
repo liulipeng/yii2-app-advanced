@@ -3,7 +3,7 @@ Yii2 高级模板，配置的后台样式
 
 ### 作者博客
 
-[http://www.izyue.com/yii2-admin/](http://www.izyue.com/yii2-admin/)
+[https://www.izyue.com/yii2-admin](http://www.izyue.com/yii2-admin/)
 
 ### 简介
 
