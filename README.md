@@ -1,6 +1,11 @@
 Yii2 高级模板，配置的后台样式
 ===============================
 
+[![Latest Stable Version](https://poser.pugx.org/izyue/yii2-app-advanced/v/stable)](https://packagist.org/packages/izyue/yii2-app-advanced)
+[![Total Downloads](https://poser.pugx.org/izyue/yii2-app-advanced/downloads)](https://packagist.org/packages/izyue/yii2-app-advanced)
+[![License](https://poser.pugx.org/izyue/yii2-app-advanced/license)](https://packagist.org/packages/izyue/yii2-app-advanced)
+[![Daily Downloads](https://poser.pugx.org/izyue/yii2-app-advanced/d/daily)](https://packagist.org/packages/izyue/yii2-app-advanced)
+
 ### 作者博客
 
 [https://www.izyue.com/yii2-admin](http://www.izyue.com/yii2-admin/)
