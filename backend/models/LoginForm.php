@@ -44,7 +44,7 @@ class LoginForm extends Model
         if (!$this->hasErrors()) {
             $user = $this->getUser();
             if (!$user || !$user->validatePassword($this->password)) {
-                $this->addError($attribute, Yii::t('login', 'username or password error'));
+                $this->addError($attribute, Yii::t('login', 'Incorrect username or password.'));
             }
         }
     }
