@@ -9,6 +9,6 @@ return [
         'password_reset_token' => 'ExzkCOaYc1L8IOBs4wdTGGbgNiG3Wz1I_1402312317',
         'created_at' => '1402312317',
         'updated_at' => '1402312317',
-        'email' => 'nicole.paucek@schultz.info',
+        'email' => 'liu.lipeng@icloud.com',
     ],
 ];
