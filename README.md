@@ -5,6 +5,7 @@ Yii2 高级模板，配置的后台样式
 [![Total Downloads](https://poser.pugx.org/izyue/yii2-app-advanced/downloads)](https://packagist.org/packages/izyue/yii2-app-advanced)
 [![License](https://poser.pugx.org/izyue/yii2-app-advanced/license)](https://packagist.org/packages/izyue/yii2-app-advanced)
 [![Daily Downloads](https://poser.pugx.org/izyue/yii2-app-advanced/d/daily)](https://packagist.org/packages/izyue/yii2-app-advanced)
+[![Build Status](https://travis-ci.org/liulipeng/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/liulipeng/yii2-app-advanced)
 
 ### 作者博客
 
@@ -78,27 +79,27 @@ Password: @newsnow.com.cn@
 
 #### 登录
 
-![](http://www.izyue.com/yii2-admin/index/1.jpg)
+![](http://www.izyue.com/yii2-admin/index/1.jpg?6)
 
 #### 首页
 
-![](http://www.izyue.com/yii2-admin/index/2.jpg)
+![](http://www.izyue.com/yii2-admin/index/2.jpg?6)
 
 #### 权限管理
 
-![](http://www.izyue.com/yii2-admin/index/3.jpg)
+![](http://www.izyue.com/yii2-admin/index/3.jpg?6)
 
 #### 角色管理
 
-![](http://www.izyue.com/yii2-admin/index/4.jpg)
+![](http://www.izyue.com/yii2-admin/index/4.jpg?6)
 
 #### 路由管理
 
-![](http://www.izyue.com/yii2-admin/index/5.jpg)
+![](http://www.izyue.com/yii2-admin/index/5.jpg?6)
 
 #### 菜单管理
 
-![](http://www.izyue.com/yii2-admin/index/6.jpg)
+![](http://www.izyue.com/yii2-admin/index/6.jpg?6)
 
 DIRECTORY STRUCTURE
 -------------------
