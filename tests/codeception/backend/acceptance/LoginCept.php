@@ -3,7 +3,7 @@
 namespace tests\codeception\backend\acceptance;
 
 use tests\codeception\backend\AcceptanceTester;
-use tests\codeception\common\_pages\LoginPage;
+use tests\codeception\backend\_pages\LoginPage;
 
 /* @var $scenario \Codeception\Scenario */
 
@@ -36,7 +36,7 @@ if (method_exists($I, 'wait')) {
     $I->wait(3); // only for selenium
 }
 $I->expectTo('see that user is logged');
-$I->see('Logout (erau)', 'form button[type=submit]');
+$I->see('Welcome to use Backstage Management！', '.text-center p');
 $I->dontSeeLink('Login');
 $I->dontSeeLink('Signup');
 /** Uncomment if using WebDriver

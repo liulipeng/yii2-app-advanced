@@ -35,7 +35,11 @@ install:
     cd ../../../
 before_script:
   - mysql -e 'CREATE DATABASE yii2_advanced_tests;';
-  - cd tests/codeception/bin && php yii migrate --interactive=0 && cd ../../..
+  - cd tests/codeception/bin
+  - php yii migrate --interactive=0
+  - php yii migrate --migrationPath=@yii/rbac/migrations --interactive=0
+  - php yii migrate --migrationPath=@izyue/admin/migrations --interactive=0
+  - cd ../../..
 
 script:
   - |
