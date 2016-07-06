@@ -6,7 +6,7 @@
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
-        "source": "https://github.com/liulipeng/Yii2-Project-Admin"
+        "source": "https://github.com/liulipeng/yii2-app-advanced"
     },
     "minimum-stability": "dev",
     "require": {
