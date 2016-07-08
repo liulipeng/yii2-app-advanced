@@ -119,7 +119,7 @@ var TreeView = function () {
             });
 
             var treeDataSource7 = new DataSourceTree({
-                url: '/index.php?r=admin%2Fmenu%2Findex',
+                url: window.location.href,
                 delay: 400
             });
 
