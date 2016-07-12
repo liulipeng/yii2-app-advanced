@@ -8,7 +8,7 @@
     "support": {
         "source": "https://github.com/liulipeng/yii2-app-advanced"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": ">=2.0.6",
@@ -16,7 +16,7 @@
         "yiisoft/yii2-swiftmailer": "*",
         "izyue/yii2-admin": "*",
         "yiidoc/yii2-redactor": "*",
-        "yiisoft/yii2-imagine": "^2.0"
+        "yiisoft/yii2-imagine": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
