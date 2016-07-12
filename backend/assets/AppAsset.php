@@ -19,8 +19,6 @@ class AppAsset extends AssetBundle
         'statics/css/style-responsive.css',
     ];
     public $js = [
-//        'statics/js/jquery.js',
-        'statics/js/bootstrap.min.js',
         'statics/js/jquery.dcjqaccordion.2.7.js',
         'statics/js/jquery.scrollTo.min.js',
         'statics/js/jquery.nicescroll.js',
@@ -31,5 +29,6 @@ class AppAsset extends AssetBundle
     public $depends = [
         'yii\web\YiiAsset',
 //        'yii\bootstrap\BootstrapAsset',
+        'yii\bootstrap\BootstrapPluginAsset',
     ];
 }
