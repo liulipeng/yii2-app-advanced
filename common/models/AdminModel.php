@@ -8,7 +8,7 @@ use yii\behaviors\TimestampBehavior;
 use yii\web\IdentityInterface;
 
 /**
- * User model
+ * AdminModel
  *
  * @property integer $id
  * @property string $username
@@ -39,24 +39,6 @@ class AdminModel extends BaseModel implements IdentityInterface
     /**
      * @inheritdoc
      */
-    public function behaviors()
-    {
-        return [
-            TimestampBehavior::className(),
-        ];
-    }
-
-//    public function scenarios()
-//    {
-//        return [
-//            'create' => ['username', 'email', 'password'],
-//            'update' => ['username', 'email', 'password'],
-//        ];
-//    }
-
-    /**
-     * @inheritdoc
-     */
     public function rules()
     {
         return [
@@ -79,6 +61,9 @@ class AdminModel extends BaseModel implements IdentityInterface
         ];
     }
 
+    /**
+     * @inheritdoc
+     */
     public function attributeLabels(){
         return [
             'username' => Yii::t('common', 'username'),
