@@ -37,6 +37,13 @@ Yii2 高级模板，配置的后台样式
 php composer.phar global require "fxp/composer-asset-plugin:~1.1.1"
 php composer.phar create-project --prefer-dist izyue/yii2-app-advanced advanced
 ```
+如果是composer是全局命令，请执行下面代码
+
+```
+composer global require "fxp/composer-asset-plugin:~1.1.1"
+composer create-project --prefer-dist izyue/yii2-app-advanced advanced
+
+```
 
 #### 2. 安装Composer
 ---
@@ -45,7 +52,14 @@ php composer.phar create-project --prefer-dist izyue/yii2-app-advanced advanced
 composer install
 ```
 
-#### 3. 导入表结构(migration)
+#### 3. 初始化
+---
+
+```
+php init
+```
+
+#### 4. 导入表结构(migration)
 ---
 
 需要顺序执行
@@ -53,12 +67,12 @@ composer install
 - 导入rbac migration
 
 ```
-yii migrate --migrationPath=@yii/rbac/migrations
+php yii migrate --migrationPath=@yii/rbac/migrations
 ```
 - 导入admin migration
 
 ```
-yii migrate --migrationPath=@izyue/admin/migrations
+php yii migrate --migrationPath=@izyue/admin/migrations
 ```
 
 ### 后台登录密码
