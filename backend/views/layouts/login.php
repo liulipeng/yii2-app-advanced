@@ -12,7 +12,7 @@ use common\widgets\Alert;
 
 AppAsset::register($this);
 
-$this->registerCssFile('/statics/css/soon.css');
+$this->registerCssFile('@web/statics/css/soon.css');
 
 ?>
 <?php $this->beginPage() ?>

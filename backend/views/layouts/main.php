@@ -21,11 +21,7 @@ $routeArray = explode('/', $route);
 array_pop($routeArray);
 $controllerName = implode('/', $routeArray);
 
-//echo "<pre>";
-//print_r($menuRows);
-//die;
-
-$this->registerCssFile('/statics/css/slidebars.css', ['depends'=>'backend\assets\AppAsset']);
+$this->registerCssFile('@web/statics/css/slidebars.css', ['depends'=>'backend\assets\AppAsset']);
 
 function isSubUrl($menuArray, $route)
 {
@@ -247,7 +243,7 @@ function initMenu($menuArray, $controllerName, $isSubUrl, $isShowIcon=false)
                         </li>
                         <li>
                             <a href="#">
-                                <span class="photo"><img alt="avatar" src="/statics/img/avatar-mini.jpg"></span>
+                                <span class="photo"><img alt="avatar" src="<?=Yii::getAlias('@web')?>/statics/img/avatar-mini.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Jonathan Smith</span>
                                     <span class="time">Just now</span>
@@ -259,7 +255,7 @@ function initMenu($menuArray, $controllerName, $isSubUrl, $isShowIcon=false)
                         </li>
                         <li>
                             <a href="#">
-                                <span class="photo"><img alt="avatar" src="/statics/img/avatar-mini2.jpg"></span>
+                                <span class="photo"><img alt="avatar" src="<?=Yii::getAlias('@web')?>/statics/img/avatar-mini2.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Jhon Doe</span>
                                     <span class="time">10 mins</span>
@@ -271,7 +267,7 @@ function initMenu($menuArray, $controllerName, $isSubUrl, $isShowIcon=false)
                         </li>
                         <li>
                             <a href="#">
-                                <span class="photo"><img alt="avatar" src="/statics/img/avatar-mini3.jpg"></span>
+                                <span class="photo"><img alt="avatar" src="<?=Yii::getAlias('@web')?>/statics/img/avatar-mini3.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Jason Stathum</span>
                                     <span class="time">3 hrs</span>
@@ -283,7 +279,7 @@ function initMenu($menuArray, $controllerName, $isSubUrl, $isShowIcon=false)
                         </li>
                         <li>
                             <a href="#">
-                                <span class="photo"><img alt="avatar" src="/statics/img/avatar-mini4.jpg"></span>
+                                <span class="photo"><img alt="avatar" src="<?=Yii::getAlias('@web')?>/statics/img/avatar-mini4.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Jondi Rose</span>
                                     <span class="time">Just now</span>
@@ -364,7 +360,7 @@ function initMenu($menuArray, $controllerName, $isSubUrl, $isShowIcon=false)
                 <!-- user login dropdown start-->
                 <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <img alt="" src="/statics/img/avatar1_small.jpg">
+                        <img alt="" src="<?=Yii::getAlias('@web')?>/statics/img/avatar1_small.jpg">
                         <span class="username"><?=Yii::$app->user->identity['username']?></span>
                         <b class="caret"></b>
                     </a>
@@ -435,7 +431,7 @@ function initMenu($menuArray, $controllerName, $isSubUrl, $isShowIcon=false)
             <li class="online">
                 <div class="media">
                     <a href="#" class="pull-left media-thumb">
-                        <img alt="" src="/statics/img/chat-avatar2.jpg" class="media-object">
+                        <img alt="" src="<?=Yii::getAlias('@web')?>/statics/img/chat-avatar2.jpg" class="media-object">
                     </a>
                     <div class="media-body">
                         <strong>John Doe</strong>
@@ -446,7 +442,7 @@ function initMenu($menuArray, $controllerName, $isSubUrl, $isShowIcon=false)
             <li class="online">
                 <div class="media">
                     <a href="#" class="pull-left media-thumb">
-                        <img alt="" src="/statics/img/chat-avatar.jpg" class="media-object">
+                        <img alt="" src="<?=Yii::getAlias('@web')?>/statics/img/chat-avatar.jpg" class="media-object">
                     </a>
                     <div class="media-body">
                         <div class="media-status">
@@ -461,7 +457,7 @@ function initMenu($menuArray, $controllerName, $isSubUrl, $isShowIcon=false)
             <li class="online">
                 <div class="media">
                     <a href="#" class="pull-left media-thumb">
-                        <img alt="" src="/statics/img/pro-ac-1.png" class="media-object">
+                        <img alt="" src="<?=Yii::getAlias('@web')?>/statics/img/pro-ac-1.png" class="media-object">
                     </a>
                     <div class="media-body">
                         <div class="media-status">
@@ -475,7 +471,7 @@ function initMenu($menuArray, $controllerName, $isSubUrl, $isShowIcon=false)
             <li class="online">
                 <div class="media">
                     <a href="#" class="pull-left media-thumb">
-                        <img alt="" src="/statics/img/avatar1.jpg" class="media-object">
+                        <img alt="" src="<?=Yii::getAlias('@web')?>/statics/img/avatar1.jpg" class="media-object">
                     </a>
                     <div class="media-body">
                         <strong>Anjelina Joli</strong>
@@ -486,7 +482,7 @@ function initMenu($menuArray, $controllerName, $isSubUrl, $isShowIcon=false)
             <li class="online">
                 <div class="media">
                     <a href="#" class="pull-left media-thumb">
-                        <img alt="" src="/statics/img/mail-avatar.jpg" class="media-object">
+                        <img alt="" src="<?=Yii::getAlias('@web')?>/statics/img/mail-avatar.jpg" class="media-object">
                     </a>
                     <div class="media-body">
                         <div class="media-status">

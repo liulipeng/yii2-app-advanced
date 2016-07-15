@@ -2,21 +2,17 @@
 
 /* @var $this yii\web\View */
 
-$this->registerCssFile('/statics/assets/font-awesome/css/font-awesome.css', ['depends'=>'backend\assets\AppAsset']);
-$this->registerCssFile('/statics/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css', ['depends'=>'backend\assets\AppAsset']);
-$this->registerCssFile('/statics/css/owl.carousel.css', ['depends'=>'backend\assets\AppAsset']);
+$this->registerCssFile('@web/statics/assets/font-awesome/css/font-awesome.css', ['depends'=>'backend\assets\AppAsset']);
+$this->registerCssFile('@web/statics/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css', ['depends'=>'backend\assets\AppAsset']);
+$this->registerCssFile('@web/statics/css/owl.carousel.css', ['depends'=>'backend\assets\AppAsset']);
 
-//$this->registerJsFile('/statics/js/jquery.dcjqaccordion.2.7.js', ['depends'=>'backend\assets\AppAsset']);
-//$this->registerJsFile('/statics/js/jquery.scrollTo.min.js', ['depends'=>'backend\assets\AppAsset']);
-//$this->registerJsFile('/statics/js/jquery.nicescroll.js', ['depends'=>'backend\assets\AppAsset']);
-//$this->registerJsFile('/statics/js/jquery.sparkline.js', ['depends'=>'backend\assets\AppAsset']);
-$this->registerJsFile('/statics/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js', ['depends'=>'backend\assets\AppAsset']);
-$this->registerJsFile('/statics/js/owl.carousel.js', ['depends'=>'backend\assets\AppAsset']);
-$this->registerJsFile('/statics/js/jquery.customSelect.min.js', ['depends'=>'backend\assets\AppAsset']);
-$this->registerJsFile('/statics/js/respond.min.js', ['depends'=>'backend\assets\AppAsset']);
-$this->registerJsFile('/statics/js/sparkline-chart.js', ['depends'=>'backend\assets\AppAsset']);
-$this->registerJsFile('/statics/js/easy-pie-chart.js', ['depends'=>'backend\assets\AppAsset']);
-$this->registerJsFile('/statics/js/count.js', ['depends'=>'backend\assets\AppAsset']);
+$this->registerJsFile('@web/statics/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js', ['depends'=>'backend\assets\AppAsset']);
+$this->registerJsFile('@web/statics/js/owl.carousel.js', ['depends'=>'backend\assets\AppAsset']);
+$this->registerJsFile('@web/statics/js/jquery.customSelect.min.js', ['depends'=>'backend\assets\AppAsset']);
+$this->registerJsFile('@web/statics/js/respond.min.js', ['depends'=>'backend\assets\AppAsset']);
+$this->registerJsFile('@web/statics/js/sparkline-chart.js', ['depends'=>'backend\assets\AppAsset']);
+$this->registerJsFile('@web/statics/js/easy-pie-chart.js', ['depends'=>'backend\assets\AppAsset']);
+$this->registerJsFile('@web/statics/js/count.js', ['depends'=>'backend\assets\AppAsset']);
 
 $this->registerJs("
       //owl carousel
@@ -215,7 +211,7 @@ $this->title = 'My Yii Application';
             <section class="panel">
                 <div class="panel-body">
                     <a href="#" class="task-thumb">
-                        <img src="/statics/img/avatar1.jpg" alt="">
+                        <img src="<?=Yii::getAlias('@web')?>/statics/img/avatar1.jpg" alt="">
                     </a>
                     <div class="task-thumb-details">
                         <h1><a href="#">Anjelina Joli</a></h1>
@@ -389,19 +385,19 @@ $this->title = 'My Yii Application';
                                         <p><a href="#">Anjelina Joli</a> added new album <span><a href="#" class="blue">PARTY TIME</a></span></p>
                                         <div class="album">
                                             <a href="#">
-                                                <img alt="" src="/statics/img/sm-img-1.jpg">
+                                                <img alt="" src="<?=Yii::getAlias('@web')?>/statics/img/sm-img-1.jpg">
                                             </a>
                                             <a href="#">
-                                                <img alt="" src="/statics/img/sm-img-2.jpg">
+                                                <img alt="" src="<?=Yii::getAlias('@web')?>/statics/img/sm-img-2.jpg">
                                             </a>
                                             <a href="#">
-                                                <img alt="" src="/statics/img/sm-img-3.jpg">
+                                                <img alt="" src="<?=Yii::getAlias('@web')?>/statics/img/sm-img-3.jpg">
                                             </a>
                                             <a href="#">
-                                                <img alt="" src="/statics/img/sm-img-1.jpg">
+                                                <img alt="" src="<?=Yii::getAlias('@web')?>/statics/img/sm-img-1.jpg">
                                             </a>
                                             <a href="#">
-                                                <img alt="" src="/statics/img/sm-img-2.jpg">
+                                                <img alt="" src="<?=Yii::getAlias('@web')?>/statics/img/sm-img-2.jpg">
                                             </a>
                                         </div>
                                     </div>
@@ -582,7 +578,7 @@ $this->title = 'My Yii Application';
                 <aside class="post-highlight yellow v-align">
                     <div class="panel-body text-center">
                         <div class="pro-thumb">
-                            <img src="/statics/img/ring.jpg" alt="">
+                            <img src="<?=Yii::getAlias('@web')?>/statics/img/ring.jpg" alt="">
                         </div>
                     </div>
                 </aside>
@@ -656,7 +652,7 @@ $this->title = 'My Yii Application';
                             <div class="panel-body">
                                 <h4>Jonathan Smith</h4>
                                 <div class="follow-ava">
-                                    <img src="/statics/img/follower-avatar.jpg" alt="">
+                                    <img src="<?=Yii::getAlias('@web')?>/statics/img/follower-avatar.jpg" alt="">
                                 </div>
                             </div>
                         </div>
